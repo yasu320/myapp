@@ -4,10 +4,6 @@ main > .container {
   padding: 60px 15px 0;
 }
 
-body {
-  padding-top: 60px;
-}
-
 section {
   overflow: auto;
 }
@@ -35,7 +31,6 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
 }
 
 p {
@@ -58,7 +53,8 @@ p {
 /* home */
 
 .jumbotron {
-  background-image: url("boxed-water-is-better-1464026-unsplash.jpg");
+  margin-top: -5px;
+  background-image: url("felix-mooneeram-222805-unsplash.jpg");
   background-size: cover;
   background-position: center 60%;
   overflow: hidden;
@@ -70,21 +66,51 @@ p {
   }
 }
 
-.jumbotron::before {
-  background: inherit;
-  content: '';
-  filter: blur(8px);
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;
+.jumbotron-heading {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 4em;
 }
 
-.jumbotron-heading {
-  font-family: "Nico Moji";
-  color: orange;
-  font-size: 4em;
+/* login-form */
+
+#login-forms{
+  width:412px;
+  margin:10vh auto;
+  background-color:#f3f3f3;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#login-forms form {
+  width: 100%;
+  max-width: 410px;
+  padding: 15px;
+  margin: auto;
+}
+
+#login-forms .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#login-forms .actions {
+  padding-top: 15px;
+}
+
+.custom-container {
+  text-align: center;
+  width: 750px;
+  margin: auto;
+  padding: 60px 0 200px 0;
+  .iframe {
+    p {
+      text-align: left;
+    }
+  }
 }
 
