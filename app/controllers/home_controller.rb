@@ -5,7 +5,10 @@ class HomeController < ApplicationController
                                      part: "snippet",
                                      maxResults: "48",
                                      key: 'AIzaSyC-jNeYBgKMXg9EooWystwXZtRKJPJsgFM',
-                                     q: '映画　予告'
+                                     q: '映画　予告　公式',
+                                     type: 'video',
+                                     order: "date",
+                                     videoCategoryId: '1'
                                  })
 
     uri = URI.parse("https://www.googleapis.com/youtube/v3/search?#{params}")
