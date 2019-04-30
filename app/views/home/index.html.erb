@@ -13,7 +13,7 @@
     <% @result["items"].each do |item| %>
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <%= link_to image_tag(item['snippet']["thumbnails"]["high"]["url"],:width => "347.98"), home_path(item['id']["videoId"]) %>
+          <%= link_to image_tag(item['snippet']["thumbnails"]["high"]["url"],:width => "347.98"), home_path(1) %>
           <div class="card-body">
             <p class="card-text"><%= item['snippet']["title"] %></p>
             <div class="d-flex justify-content-between align-items-center">

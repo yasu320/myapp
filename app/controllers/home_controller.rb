@@ -4,9 +4,8 @@ class HomeController < ApplicationController
     params = URI.encode_www_form({
                                      part: "snippet",
                                      maxResults: "48",
-                                     key: 'AIzaSyBBkzXa908B7gbXBcTLmYyrioGuyHDyEa0',
-                                     q: "映画　予告",
-                                     type: "video",
+                                     key: 'AIzaSyC-jNeYBgKMXg9EooWystwXZtRKJPJsgFM',
+                                     q: '映画　予告'
                                  })
 
     uri = URI.parse("https://www.googleapis.com/youtube/v3/search?#{params}")
@@ -22,7 +21,7 @@ class HomeController < ApplicationController
     @videoId = params[:id]
     params = URI.encode_www_form({
                                      part: "snippet",
-                                     key: 'AIzaSyBBkzXa908B7gbXBcTLmYyrioGuyHDyEa0',
+                                     key: 'AIzaSyC-jNeYBgKMXg9EooWystwXZtRKJPJsgFM',
                                      id: @videoId,
                                  })
 
